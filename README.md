@@ -21,13 +21,13 @@ Generate fully static HTML pages from your SPA at build time — ideal for SEO-f
 ## 📦 Installation
 
 ```bash
-npm install vite-plugin-prerender-static prerender-core
+npm install vite-plugin-prerender-static
 ```
 
 or
 
 ```bash
-pnpm add vite-plugin-prerender-static prerender-core
+pnpm add vite-plugin-prerender-static
 ```
 
 ---
@@ -67,21 +67,6 @@ export default defineConfig({
   ],
 });
 ```
-
----
-
-## 📁 Output Structure
-
-```txt
-dist/
-├─ index.html
-├─ about/
-│  └─ index.html
-```
-
-All JS and CSS assets are **automatically injected and path-fixed**.
-
----
 
 ## 🧠 SEO Configuration
 

@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-prerender-static",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Static prerendering plugin for Vite with SEO, meta tags, and multi-route support.",
   "author": "Rahul Sharma <rahu8299@gmail.com>",
   "license": "MIT",

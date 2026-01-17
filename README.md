@@ -1,24 +1,25 @@
-# 🚀 vite-plugin-prerender-static
+# vite-plugin-prerender-static
 
-Dead Simple Static Prerendering for Vite, done the right way.
-Static prerendering for Vite with **SEO meta tags**, **multi-route generation**, and **zero runtime dependencies**.
-Generate fully static HTML pages from your SPA at build time — ideal for SEO-friendly Vite apps.
+Dead-simple static prerendering for Vite, implemented correctly.
 
----
-
-## ✨ Features
-
-- ⚡ **Vite-native plugin** (runs on `build`)
-- 🧠 **Static prerendering** for multiple routes
-- 🔍 **SEO meta tag generation** (Open Graph, Twitter, JSON-LD)
-- 🧩 **Framework-agnostic core**
-- 📂 Correct handling of **nested routes**
-- 🔁 **Drop-in replacement** (no breaking changes)
-- 🛠️ Works with **React, Vue, Svelte, Solid, Vanilla**
+A lightweight static prerendering solution for Vite with built-in SEO meta tag support, multi-route generation, and zero runtime dependencies.
+It generates fully static HTML pages from your SPA at build time, making it ideal for SEO-focused Vite applications without the complexity of SSR.
 
 ---
 
-## 📦 Installation
+## Features
+
+- Vite-native plugin (runs during `build`)
+- Static prerendering for multiple routes
+- SEO meta tag generation (Open Graph, Twitter, JSON-LD)
+- Framework-agnostic core
+- Correct handling of nested routes
+- Drop-in replacement with no breaking changes
+- Compatible with React, Vue, Svelte, Solid, and Vanilla JS
+
+---
+
+## Installation
 
 ```bash
 npm install vite-plugin-prerender-static
@@ -32,7 +33,7 @@ pnpm add vite-plugin-prerender-static
 
 ---
 
-## 🔧 Usage
+## Usage
 
 ### `vite.config.ts`
 
@@ -68,7 +69,9 @@ export default defineConfig({
 });
 ```
 
-## 🧠 SEO Configuration
+---
+
+## SEO Configuration
 
 ### Using Structured SEO Tags
 
@@ -94,11 +97,11 @@ export default defineConfig({
 
 ---
 
-## 🧩 Template System
+## Template System
 
-By default, the plugin looks for `template.html` in your project root.
+By default, the plugin looks for `template.html` in the project root.
 
-### Default Template (auto-generated)
+### Default Template (Auto-generated)
 
 ```html
 <!DOCTYPE html>
@@ -123,16 +126,16 @@ By default, the plugin looks for `template.html` in your project root.
 
 ---
 
-## 🧪 Default Behavior
+## Default Behavior
 
-- If `template.html` is missing → it is **auto-created**
-- If `render()` is not provided → a fallback HTML is used
-- Relative asset paths are **fixed automatically**
-- Runs only during **Vite build**
+- If `template.html` is missing, it is automatically created
+- If `render()` is not provided, a fallback HTML output is used
+- Relative asset paths are fixed automatically
+- The plugin runs only during the Vite build phase
 
 ---
 
-## ⚙️ Options
+## Options
 
 ```ts
 prerenderStatic({
@@ -149,68 +152,66 @@ prerenderStatic({
 
 ---
 
-## 📦 Core Package
+## Core Package
 
-This plugin uses a framework-agnostic core:
+This plugin is built on a framework-agnostic core:
 
 ```ts
 import { generateSEOTags } from "prerender-core";
 ```
 
-You can use it independently in:
+The core package can be used independently in:
 
-- Node scripts
-- Custom SSGs
-- Other build tools
+- Node.js scripts
+- Custom static site generators
+- Other build pipelines
 
 ---
 
-## 🔒 Compatibility
+## Compatibility
 
-| Tool       | Supported                 |
+| Tool       | Supported Versions        |
 | ---------- | ------------------------- |
 | Vite       | v4 → v7                   |
-| Node       | v18+                      |
+| Node.js    | v18+                      |
 | Frameworks | React, Vue, Svelte, Solid |
 
 ---
 
-## 🏁 When Should I Use This?
+## When Should I Use This?
 
-Use this plugin if:
+This plugin is a good fit if:
 
-- You want **SEO for SPAs**
-- You don’t want SSR complexity
-- You want **static hosting**
-- You want full control over HTML output
+- You need SEO support for SPAs
+- You want to avoid SSR complexity
+- You are deploying to static hosting
+- You want full control over the generated HTML
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **Rahul Sharma**
-📧 [rahu8299@gmail.com](mailto:rahu8299@gmail.com)
-🔗 [https://github.com/rahulsushilsharma](https://github.com/rahulsushilsharma)
+Email: [rahu8299@gmail.com](mailto:rahu8299@gmail.com)
+GitHub: [https://github.com/rahulsushilsharma](https://github.com/rahulsushilsharma)
 
 ---
 
-## 📄 License
+## License
 
 MIT © Rahul Sharma
 
 ---
 
-## ⭐ Roadmap
+## Roadmap
 
 - CLI prerender tool
-- Astro adapter
 - Automatic route discovery
-- Parallel rendering
-- HTML transform hooks
+- HTML transformation hooks
 
 ---
 
-## ❤️ Contributing
+## Contributing
 
-PRs welcome!
-Please open an issue before major changes.
+Pull requests are welcome.
+Please open an issue before proposing major changes.
